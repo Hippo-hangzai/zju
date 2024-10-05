@@ -1,10 +1,4 @@
 site_name: zju-robotics
-site_url: https://zju-robotics.cn/
-site_author: bclz19
-
-repo_name: zju-robotics
-repo_url: https://github.com/bclz19/zju-robotics/
-
 # theme:
 #   name: material #主题
 #   language: zh
@@ -119,5 +113,9 @@ nav:
   - 首页: 
   # - 所以什么是机器人工程:
   #   - 所以什么是机器人工程: about_robotics.md
+    # - 疯狂的机器人:
+    #   - 疯狂的机器人: "crazy_robotics.md"
+
+ 
     - 所以机器人工程到底是什么: senior_speech/whats_robotics.md
     - 科研方向/所需基础: senior_speech/research_guidance.md
