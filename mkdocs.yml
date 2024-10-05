@@ -1,4 +1,123 @@
-site_name: My Docs
+site_name: zju-robotics
+site_url: https://zju-robotics.cn/
+site_author: bclz19
+
+repo_name: zju-robotics
+repo_url: https://github.com/bclz19/zju-robotics/
+
+# theme:
+#   name: material #主题
+#   language: zh
+#   logo: img/favicon.ico
+#   features:
+#   - content.tabs.link
+#   - navigation.instant
+#   - navigation.tabs
+#   - navigation.tracking
+#   - navigation.path
+#   - toc.integrate
+#   - toc.follow
+#   - navigation.top
+#   - navigation.footer
+#   - navigation.expand
+#   - search.highlight
+#   - search.share
+#   - search.suggest
+#   palette: 
+
+#     # Palette toggle for light mode
+#     - scheme: slate
+#       toggle:
+#         icon: material/brightness-7 
+#         name: Switch to dark mode
+
+#     # Palette toggle for dark mode
+#     - scheme: default
+#       toggle:
+#         icon: material/brightness-4
+#         name: Switch to light mode
+
+
+
+#   markdown_extensions:
+#   - pymdownx.superfences
+#   - pymdownx.tabbed:
+#       alternate_style: true
+
 
 theme:
   name: material
+  custom_dir: overrides
+  language: zh
+  logo: img/favicon.ico
+  features:
+  - announce.dismiss
+  # - content.tabs.link
+  - navigation.instant
+  - navigation.tabs
+  - navigation.tracking
+  - navigation.path
+  - toc.integrate
+  - toc.follow
+  - navigation.top
+  - navigation.footer
+  # - navigation.expand
+
+  - search.highlight
+  - search.share
+  - search.suggest
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+        # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  # palette: 
+
+  #   # Palette toggle for light mode
+  #   - scheme: slate
+  #     toggle:
+  #       icon: material/brightness-7 
+  #       name: Switch to dark mode
+
+  #   # Palette toggle for dark mode
+  #   - scheme: default
+  #     toggle:
+  #       icon: material/brightness-4
+  #       name: Switch to light mode
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - docs/js/flower.js
+  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+
+
+extra_css:
+  - docs/css/custom.css
+  
+nav:
+  - 首页: 
+  # - 所以什么是机器人工程:
+  #   - 所以什么是机器人工程: about_robotics.md
+    - 所以机器人工程到底是什么: senior_speech/whats_robotics.md
+    - 科研方向/所需基础: senior_speech/research_guidance.md
